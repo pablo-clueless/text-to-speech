@@ -133,7 +133,6 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #006daa;
 }
 
 .box form {
@@ -180,5 +179,17 @@ footer {
   color: #0d0a0b;
   width: 100%;
   text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  header h1 {
+    font-size: 1rem;
+  }
+  header ul li a {
+    font-size: 1rem;
+  }
+  main {
+    padding: 10px 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
