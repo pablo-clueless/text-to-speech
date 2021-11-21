@@ -17,7 +17,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background: $sec;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 header h1 {
@@ -84,10 +84,13 @@ main {
 }
 
 footer {
-    background-color: $pry;
-    color: $dark;
     width: 100%;
+    padding: 10px 50px;
     text-align: center;
+
+    p {
+        color: $pry;
+    }
 }
 
 @media screen and (max-width: 800px) {

@@ -94,7 +94,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: #cbced1;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 header h1 {
@@ -175,10 +175,13 @@ main {
 }
 
 footer {
-  background-color: #006daa;
-  color: #0d0a0b;
   width: 100%;
+  padding: 10px 50px;
   text-align: center;
+}
+
+footer p {
+  color: #006daa;
 }
 
 @media screen and (max-width: 800px) {
