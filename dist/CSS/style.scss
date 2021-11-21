@@ -1,0 +1,92 @@
+@import 'config';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: $font;
+}
+
+header {
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $sec;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-weight: 500;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: $dark;
+    font-size: 1.5rem;
+    margin: 0 5px;
+    transition: 0.3s all ease;
+}
+
+header ul li a:hover {
+    color: $pry;
+}
+
+main {
+    padding: 10px 70px;
+}
+
+.box {
+    width: 100%;
+    align-items: center;
+    border: 1px solid $pry;
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+
+        textarea {
+            width: 100%;
+            height: 500px;
+            border: 1px solid $pry;
+            outline: none;
+            padding: 5px 10px;
+            font-size: 1.2rem;
+            resize: none;
+        }
+
+        select {
+            width: 50%;
+            height: 30px;
+            border: 1px solid $pry;
+            outline: none;
+            padding: 5px 20px;
+            margin: 10px 0;
+        }
+
+        .slider-div {
+            width: 50%;
+            margin: 10px 0;
+        }
+    }
+}
+
+footer {
+    background-color: $pry;
+    color: $dark;
+    width: 100%;
+    text-align: center;
+}

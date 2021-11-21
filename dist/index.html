@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Okunola Samson">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script
+    src="https://kit.fontawesome.com/e3121e6848.js"
+    crossorigin="anonymous"
+  ></script>
+    <title>Text to Speech</title>
+</head>
+<body>
+    <header>
+        <h1>Text to Speech</h1>
+        <ul>
+            <li>
+                <a href="https://github.com/pablo-clueless" target="_blank" class="fab fa-github">
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/pablo_clueless" target="_blank" class="fab fa-twitter"></a>
+            </li>
+            <li>
+                <a href="https://okunolasamson.netlify.app" target="_blank" class="fas fa-globe"></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/samson-okunola-76842a169/" target="_blank" class="fab fa-linkedin"></a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div class="box">
+            <form>
+                <textarea name="" id="text-input" placeholder="Type something here..."></textarea>
+                <div class="slider-div">
+                    <label for="rate">Rate</label>
+                    <div id="rate-value" class="badge">1</div>
+                    <input type="range"  class="slider" value="1" id="rate" min="0.5" max="2" step="0.1">
+                </div>
+                <div class="slider-div">
+                    <label for="pitch">Pitch</label>
+                    <div id="pitch-value" class="badge">1</div>
+                    <input type="range" class="slider" value="1" id="pitch" min="0" max="2" step="0.1">
+                </div>
+                <select id="voice-select"></select>
+                <button class="btn">Speak</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        pablo_clueless, &copy;2021.
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

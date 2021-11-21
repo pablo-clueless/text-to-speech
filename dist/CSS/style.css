@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;500;800&display=swap");
+.btn {
+  padding: 5px 20px;
+  font-size: 1.2rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #006daa;
+  color: #fff;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #006daa;
+  border-color: #006daa;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 2px;
+  background: #006daa;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+  border-radius: 15px;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background: #0d0a0b;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.slider::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #0d0a0b;
+  cursor: pointer;
+}
+
+.badge {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1.2rem;
+  height: 1rem;
+  color: #006daa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+}
+
+header {
+  padding: 20px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #cbced1;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-weight: 500;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #0d0a0b;
+  font-size: 1.5rem;
+  margin: 0 5px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+header ul li a:hover {
+  color: #006daa;
+}
+
+main {
+  padding: 10px 70px;
+}
+
+.box {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #006daa;
+}
+
+.box form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+}
+
+.box form textarea {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #006daa;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  resize: none;
+}
+
+.box form select {
+  width: 50%;
+  height: 30px;
+  border: 1px solid #006daa;
+  outline: none;
+  padding: 5px 20px;
+  margin: 10px 0;
+}
+
+.box form .slider-div {
+  width: 50%;
+  margin: 10px 0;
+}
+
+footer {
+  background-color: #006daa;
+  color: #0d0a0b;
+  width: 100%;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;500;800&display=swap');
+
+//Variables
+$pry: #006daa;
+$dark: #0d0a0b;
+$sec: #cbced1;
+$light: #fff;
+$font: 'Raleway', sans-serif;
+
+//Buttons
+%btn{
+    padding: 5px 20px;
+    font-size: 1.2rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.btn{
+    @extend %btn;
+    background-color: $pry;
+    color: $light;
+
+    &:hover {
+        background: transparent;
+        color: $pry;
+        border-color: $pry;
+    }
+}
+
+//Slider
+.slider{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 2px;
+    background: $pry;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 15px;
+
+    &:hover{
+        opacity: 1;
+    }
+
+    &::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: $dark;
+    border-radius: 50%;
+    cursor: pointer;
+
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+
+    &::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: $dark;
+    cursor: pointer;
+    }
+}
+
+//Badge
+.badge{
+    float: right;
+    display: flex;
+    justify-content: center;
+    width: 1.2rem;
+    height: 1rem;
+    color: $pry;
+}
+  
+ 
